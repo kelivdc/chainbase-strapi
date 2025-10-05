@@ -46,6 +46,12 @@
     },
     "body": {
       "type": "text"
+    },
+    "votes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vote.vote",
+      "mappedBy": "article"
     }
   }
 }
